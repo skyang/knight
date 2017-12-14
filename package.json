@@ -1,0 +1,21 @@
+{
+    "name": "knight",
+    "version": "0.0.1",
+    "description": "A simple static server on Top of Node.js.",
+    "main": "index.js",
+    "bin": {
+        "knight": "bin/knight"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "static-server",
+        "Node.js"
+    ],
+    "author": "skyang<hhyuestc@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^2.12.2"
+    }
+}
