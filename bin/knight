@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+let program = require('commander')
+let package = require('../package')
+
+program
+  .version(package.version)
+  .description(package.description)
+  .option('-p')
+  .command('install [name]', 'install one or more packages').alias('i')
+  .command('search [query]', 'search with optional query').alias('s')
+  .command('list', 'list packages installed')
+  .command('publish', 'publish the package').alias('p')
+  .parse(process.argv);
